@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Trivron</title>
+<meta name="description" content="Services offered around lightweight, accessible, gesture-controlled web experiences.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar">
+    <div class="navbar__inner">
+        <a class="navbar__brand" href="index.html">
+            <span class="navbar__brand-mark">T</span>
+            Trivron
+        </a>
+        <button class="navbar__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">☰</button>
+        <nav aria-label="Primary">
+            <ul class="navbar__links" id="nav-links">
+                <li><a class="navbar__link" data-nav-link href="index.html">Home</a></li>
+                <li><a class="navbar__link" data-nav-link href="about.html">About</a></li>
+                <li><a class="navbar__link" data-nav-link href="projects.html">Projects</a></li>
+                <li><a class="navbar__link" data-nav-link href="services.html">Services</a></li>
+                <li><a class="navbar__link" data-nav-link href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+
+    <section class="hero">
+        <div class="container">
+            <p class="eyebrow">Services</p>
+            <h1>What we can build for you.</h1>
+            <p style="max-width:640px;">From a single accessible page to a full hands-free
+               experience, we design and build lightweight interfaces that stay fast and reliable.</p>
+        </div>
+    </section>
+
+    <section class="is-tight">
+        <div class="container">
+            <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+                <div class="card">
+                    <div class="card__icon">🧩</div>
+                    <h3>Web Design &amp; Build</h3>
+                    <p>Modern, responsive multi-page websites built with semantic HTML and clean CSS.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">✋</div>
+                    <h3>Gesture Interaction</h3>
+                    <p>Hands-free navigation layers added on top of existing sites without touching
+                       the core experience.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🛠️</div>
+                    <h3>Performance Audits</h3>
+                    <p>Reviews focused on reducing dependencies, trimming payloads, and keeping
+                       interactions smooth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="max-width:720px;">
+            <div class="section-head">
+                <p class="eyebrow">Process</p>
+                <h2>How an engagement runs</h2>
+            </div>
+            <ol class="steps">
+                <li>
+                    <div>
+                        <h3>Discover</h3>
+                        <p>We map out the pages, content, and interactions your site actually needs.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Design</h3>
+                        <p>A clean, accessible visual system: typography, spacing, and components.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Build</h3>
+                        <p>Lightweight HTML, CSS, and JavaScript — no unnecessary frameworks.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Tune</h3>
+                        <p>Gesture thresholds, transitions, and performance are tested and adjusted.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="is-tight">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Plans</p>
+                <h2>Simple, transparent pricing</h2>
+            </div>
+            <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+                <div class="card price-card">
+                    <h3>Starter</h3>
+                    <div class="price-card__amount">$1,200<span>/project</span></div>
+                    <ul>
+                        <li>Up to 5 pages</li>
+                        <li>Responsive layout</li>
+                        <li>Standard navigation</li>
+                    </ul>
+                    <a class="btn btn--ghost" href="contact.html">Get Started</a>
+                </div>
+                <div class="card price-card is-featured">
+                    <h3>Hands-Free</h3>
+                    <div class="price-card__amount">$2,400<span>/project</span></div>
+                    <ul>
+                        <li>Everything in Starter</li>
+                        <li>Gesture navigation mode</li>
+                        <li>Camera error handling</li>
+                        <li>Debug &amp; tuning tools</li>
+                    </ul>
+                    <a class="btn btn--primary" href="contact.html">Get Started</a>
+                </div>
+                <div class="card price-card">
+                    <h3>Enterprise</h3>
+                    <div class="price-card__amount">Custom</div>
+                    <ul>
+                        <li>Everything in Hands-Free</li>
+                        <li>Ongoing support</li>
+                        <li>Performance audits</li>
+                    </ul>
+                    <a class="btn btn--ghost" href="contact.html">Talk to Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="is-tight">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Benefits</p>
+                <h2>Why lightweight wins</h2>
+            </div>
+            <div class="grid">
+                <div class="card"><h3>Faster load times</h3><p>Fewer dependencies mean less to download, parse, and execute.</p></div>
+                <div class="card"><h3>Lower CPU usage</h3><p>Simple arithmetic-based gesture logic keeps the browser responsive.</p></div>
+                <div class="card"><h3>Better privacy</h3><p>All processing stays on-device — nothing is ever uploaded.</p></div>
+                <div class="card"><h3>Easier maintenance</h3><p>Plain code any frontend developer can read and extend.</p></div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <a class="navbar__brand" href="index.html"><span class="navbar__brand-mark">T</span>Trivron</a>
+                <p style="margin-top:12px;max-width:320px;">A lightweight, hands-free gesture-controlled website built with plain HTML, CSS, and JavaScript.</p>
+            </div>
+            <div>
+                <h4>Site</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="README.md">README</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 Trivron. All rights reserved.</span>
+            <span>Built with vanilla HTML, CSS &amp; JavaScript.</span>
+        </div>
+    </div>
+</footer>
+
+<div class="hf-panel" id="hf-panel" hidden>
+    <div class="hf-panel__video-wrap">
+        <video id="hf-video" autoplay playsinline aria-label="Camera preview for hand tracking"></video>
+        <button class="hf-panel__minimize" id="hf-minimize" aria-expanded="true" aria-label="Minimize camera preview">–</button>
+    </div>
+    <div class="hf-panel__status">
+        <span class="hf-dot" id="hf-status-dot"></span>
+        <span id="hf-status-text">Waiting for hand...</span>
+    </div>
+    <div class="hf-panel__gesture" id="hf-gesture-text"></div>
+</div>
+
+<div class="hf-error" id="hf-error" role="alert" hidden>
+    <p id="hf-error-text"></p>
+    <button id="hf-error-dismiss">Dismiss</button>
+</div>
+
+<pre class="hf-debug" id="hf-debug" hidden><code id="hf-debug-content"></code></pre>
+
+<button class="hf-toggle" id="hf-toggle" type="button" aria-pressed="false" aria-label="Toggle hands-free gesture mode">
+    <span class="hf-toggle__icon" aria-hidden="true">✋</span>
+    <span>Hands-Free Mode</span>
+    <span class="hf-toggle__label" id="hf-toggle-label">OFF</span>
+</button>
+
+<script src="js/config.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/hand-gesture-utility.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

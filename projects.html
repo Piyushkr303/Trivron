@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Trivron</title>
+<meta name="description" content="A look at the technology and project structure behind Trivron's hands-free gesture-controlled website.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar">
+    <div class="navbar__inner">
+        <a class="navbar__brand" href="index.html">
+            <span class="navbar__brand-mark">T</span>
+            Trivron
+        </a>
+        <button class="navbar__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">☰</button>
+        <nav aria-label="Primary">
+            <ul class="navbar__links" id="nav-links">
+                <li><a class="navbar__link" data-nav-link href="index.html">Home</a></li>
+                <li><a class="navbar__link" data-nav-link href="about.html">About</a></li>
+                <li><a class="navbar__link" data-nav-link href="projects.html">Projects</a></li>
+                <li><a class="navbar__link" data-nav-link href="services.html">Services</a></li>
+                <li><a class="navbar__link" data-nav-link href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+
+    <section class="hero">
+        <div class="container">
+            <p class="eyebrow">Projects</p>
+            <h1>What's inside this build.</h1>
+            <p style="max-width:640px;">A breakdown of the moving parts: the gesture engine, the
+               camera lifecycle, and the technologies chosen to keep everything fast and simple.</p>
+        </div>
+    </section>
+
+    <section class="is-tight">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Featured Project</p>
+                <h2>Hands-Free Navigation Engine</h2>
+            </div>
+            <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+                <div class="card">
+                    <div class="card__icon">🖐️</div>
+                    <h3>Hand tracking</h3>
+                    <p>A lightweight, browser-based hand-landmark model detects a palm reference
+                       point on every video frame, entirely on-device.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">📈</div>
+                    <h3>Gesture classification</h3>
+                    <p>Plain arithmetic — dominant-axis comparison and threshold checks — turns
+                       landmark movement into scroll or swipe actions. No second model involved.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🧊</div>
+                    <h3>Smoothing &amp; cooldown</h3>
+                    <p>Exponential smoothing removes jitter; a short cooldown window stops one
+                       long gesture from firing multiple page changes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Technology</p>
+                <h2>Built with a deliberately small stack</h2>
+            </div>
+            <div class="grid">
+                <div class="card"><h3>HTML5</h3><p>Semantic markup shared across all five pages.</p></div>
+                <div class="card"><h3>CSS3</h3><p>One stylesheet: custom properties, grid, and lightweight transitions.</p></div>
+                <div class="card"><h3>Vanilla JavaScript</h3><p>No build step, no bundler, no framework runtime.</p></div>
+                <div class="card"><h3>MediaPipe Tasks Vision</h3><p>A compact, browser-compatible hand-landmark model running fully client-side.</p></div>
+                <div class="card"><h3>getUserMedia API</h3><p>Native browser webcam access with careful lifecycle management.</p></div>
+                <div class="card"><h3>Static hosting</h3><p>Any local HTTP server is enough — no backend, no database.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="is-tight">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Project Structure</p>
+                <h2>Clean, separated responsibilities</h2>
+            </div>
+            <div class="grid" style="grid-template-columns:repeat(2,1fr);">
+                <div class="card">
+                    <h3>hand-gesture-utility.js</h3>
+                    <p>A standalone, drop-in engine: camera lifecycle, hand tracking, smoothing,
+                       gesture classification, and the state machine, all in one file with a
+                       small public API (<code>enable()</code>, <code>disable()</code>,
+                       <code>.on(...)</code>). Copy it into any project.</p>
+                </div>
+                <div class="card">
+                    <h3>navigation.js</h3>
+                    <p>Owns the single source of truth for page order, navbar highlighting, and
+                       page transitions.</p>
+                </div>
+                <div class="card">
+                    <h3>config.js</h3>
+                    <p>Site-specific settings — debug mode, page transitions, and any overrides
+                       passed into the gesture utility. Nothing is a magic number buried in logic.</p>
+                </div>
+                <div class="card">
+                    <h3>app.js</h3>
+                    <p>Wires the utility's gesture events to this site's UI: the Hands-Free
+                       toggle, status panel, and swipe-to-navigate behavior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <a class="navbar__brand" href="index.html"><span class="navbar__brand-mark">T</span>Trivron</a>
+                <p style="margin-top:12px;max-width:320px;">A lightweight, hands-free gesture-controlled website built with plain HTML, CSS, and JavaScript.</p>
+            </div>
+            <div>
+                <h4>Site</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="README.md">README</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 Trivron. All rights reserved.</span>
+            <span>Built with vanilla HTML, CSS &amp; JavaScript.</span>
+        </div>
+    </div>
+</footer>
+
+<div class="hf-panel" id="hf-panel" hidden>
+    <div class="hf-panel__video-wrap">
+        <video id="hf-video" autoplay playsinline aria-label="Camera preview for hand tracking"></video>
+        <button class="hf-panel__minimize" id="hf-minimize" aria-expanded="true" aria-label="Minimize camera preview">–</button>
+    </div>
+    <div class="hf-panel__status">
+        <span class="hf-dot" id="hf-status-dot"></span>
+        <span id="hf-status-text">Waiting for hand...</span>
+    </div>
+    <div class="hf-panel__gesture" id="hf-gesture-text"></div>
+</div>
+
+<div class="hf-error" id="hf-error" role="alert" hidden>
+    <p id="hf-error-text"></p>
+    <button id="hf-error-dismiss">Dismiss</button>
+</div>
+
+<pre class="hf-debug" id="hf-debug" hidden><code id="hf-debug-content"></code></pre>
+
+<button class="hf-toggle" id="hf-toggle" type="button" aria-pressed="false" aria-label="Toggle hands-free gesture mode">
+    <span class="hf-toggle__icon" aria-hidden="true">✋</span>
+    <span>Hands-Free Mode</span>
+    <span class="hf-toggle__label" id="hf-toggle-label">OFF</span>
+</button>
+
+<script src="js/config.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/hand-gesture-utility.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

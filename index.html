@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trivron — Hands-Free Web Experiences</title>
+<meta name="description" content="A modern, lightweight website you can navigate with a mouse, keyboard, or your hands via webcam gesture control.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar">
+    <div class="navbar__inner">
+        <a class="navbar__brand" href="index.html">
+            <span class="navbar__brand-mark">T</span>
+            Trivron
+        </a>
+        <button class="navbar__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">☰</button>
+        <nav aria-label="Primary">
+            <ul class="navbar__links" id="nav-links">
+                <li><a class="navbar__link" data-nav-link href="index.html">Home</a></li>
+                <li><a class="navbar__link" data-nav-link href="about.html">About</a></li>
+                <li><a class="navbar__link" data-nav-link href="projects.html">Projects</a></li>
+                <li><a class="navbar__link" data-nav-link href="services.html">Services</a></li>
+                <li><a class="navbar__link" data-nav-link href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+
+    <section class="hero">
+        <div class="container hero__grid">
+            <div>
+                <p class="eyebrow">Lightweight · Local · Hands-free</p>
+                <h1>Browse this site with your mouse — or just your hand.</h1>
+                <p>Trivron is a normal, fast website that happens to include an optional hands-free
+                   mode: enable your webcam and scroll or flip between pages with simple hand
+                   movements, powered entirely by on-device gesture recognition.</p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="projects.html">View Projects</a>
+                    <a class="btn btn--ghost" href="about.html">Learn More</a>
+                </div>
+            </div>
+            <div class="hero__art" aria-hidden="true">✋</div>
+        </div>
+    </section>
+
+    <section class="is-tight">
+        <div class="container">
+            <div class="stat-row">
+                <div class="stat"><div class="stat__num">0 KB</div><div class="stat__label">Backend required</div></div>
+                <div class="stat"><div class="stat__num">100%</div><div class="stat__label">Runs in-browser</div></div>
+                <div class="stat"><div class="stat__num">&lt;1s</div><div class="stat__label">Gesture response</div></div>
+                <div class="stat"><div class="stat__num">5</div><div class="stat__label">Pages, one navbar</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Features</p>
+                <h2>Everything you need, nothing you don't</h2>
+                <p>A small set of well-built pieces working together — no frameworks bolted on
+                   for the sake of it.</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card__icon">🖱️</div>
+                    <h3>Familiar navigation</h3>
+                    <p>Mouse, touchpad, and keyboard work exactly as you'd expect on every page.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">✋</div>
+                    <h3>Hands-free mode</h3>
+                    <p>Toggle a floating button to enable webcam gesture control at any time.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">📶</div>
+                    <h3>Vertical scroll</h3>
+                    <p>Move your hand up or down to scroll the page smoothly, no clicking required.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">↔️</div>
+                    <h3>Swipe navigation</h3>
+                    <p>A deliberate left or right swipe moves to the previous or next page.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🔒</div>
+                    <h3>Private by design</h3>
+                    <p>All video processing happens locally in your browser. Nothing is uploaded or stored.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">⚡</div>
+                    <h3>Lightweight</h3>
+                    <p>Plain HTML, CSS, and JavaScript — no heavy frameworks or build step.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="is-tight">
+        <div class="container">
+            <div class="cta">
+                <h2>Try Hands-Free Mode</h2>
+                <p>Click the ✋ button in the bottom-right corner, allow camera access, and move
+                   your hand to scroll or swipe between pages.</p>
+                <a class="btn btn--primary" href="about.html">See it in action on the About page</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div>
+                <a class="navbar__brand" href="index.html"><span class="navbar__brand-mark">T</span>Trivron</a>
+                <p style="margin-top:12px;max-width:320px;">A lightweight, hands-free gesture-controlled website built with plain HTML, CSS, and JavaScript.</p>
+            </div>
+            <div>
+                <h4>Site</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="README.md">README</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 Trivron. All rights reserved.</span>
+            <span>Built with vanilla HTML, CSS &amp; JavaScript.</span>
+        </div>
+    </div>
+</footer>
+
+<!-- ===== Hands-Free Mode widget (shared markup, identical on every page) ===== -->
+<div class="hf-panel" id="hf-panel" hidden>
+    <div class="hf-panel__video-wrap">
+        <video id="hf-video" autoplay playsinline aria-label="Camera preview for hand tracking"></video>
+        <button class="hf-panel__minimize" id="hf-minimize" aria-expanded="true" aria-label="Minimize camera preview">–</button>
+    </div>
+    <div class="hf-panel__status">
+        <span class="hf-dot" id="hf-status-dot"></span>
+        <span id="hf-status-text">Waiting for hand...</span>
+    </div>
+    <div class="hf-panel__gesture" id="hf-gesture-text"></div>
+</div>
+
+<div class="hf-error" id="hf-error" role="alert" hidden>
+    <p id="hf-error-text"></p>
+    <button id="hf-error-dismiss">Dismiss</button>
+</div>
+
+<pre class="hf-debug" id="hf-debug" hidden><code id="hf-debug-content"></code></pre>
+
+<button class="hf-toggle" id="hf-toggle" type="button" aria-pressed="false" aria-label="Toggle hands-free gesture mode">
+    <span class="hf-toggle__icon" aria-hidden="true">✋</span>
+    <span>Hands-Free Mode</span>
+    <span class="hf-toggle__label" id="hf-toggle-label">OFF</span>
+</button>
+
+<script src="js/config.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/hand-gesture-utility.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
